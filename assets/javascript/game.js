@@ -45,18 +45,17 @@ $(document).ready(function() {
                     wins++
                     pauseGame = true
                     updateDisplay()
-                    setTimeout(resetGame,5000)
+                    setTimeout(resetGame,1000)
                 }
             }
         }
 
         if (!foundLetter) {
             incorrectS.play()
-            // Check if inccorrect guess is already on the list
+            // Check you dont repeat the letter
             if (!guessedLetters.includes(letter)) {
-                // Add incorrect letter to guessed letter list
+                // List incorrect letter
                 guessedLetters.push(letter)
-                // Decrement the number of remaining guesses
                 numGuess--
             }
             if (numGuess === 0) {
@@ -66,7 +65,7 @@ $(document).ready(function() {
                 losses++
                 pauseGame = true
                 updateDisplay()
-                setTimeout(resetGame, 5000)
+                setTimeout(resetGame, 1000)
             }
         }
 
