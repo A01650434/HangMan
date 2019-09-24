@@ -1,0 +1,16 @@
+body {
+    background-image: url(../images/Herbaria.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container {
+    margin: auto;
+    text-align: center;
+}
+#currentWord {
+    letter-spacing: 10px;
+}
